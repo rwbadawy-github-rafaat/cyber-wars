@@ -16,21 +16,29 @@ export const ConclusionSlide = () => {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-sm font-bold">1</div>
-                  <p className="text-foreground">الحروب السيبرانية تهديد حقيقي وخطير للأمن القومي</p>
+                  <p className="text-foreground">تطورت الحروب السيبرانية من فيروسات بسيطة إلى أسلحة استراتيجية</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                  <p className="text-foreground">تشمل جهات فاعلة متنوعة من الدول إلى الجماعات الإجرامية</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-primary-glow rounded-full flex items-center justify-center text-sm font-bold">3</div>
                   <p className="text-foreground">التأثير يمتد للقطاعات الحيوية والاقتصاد والمجتمع</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary-glow rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                  <div className="w-8 h-8 bg-destructive rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                  <p className="text-foreground">التحديات معقدة وتتطلب حلول متطورة ومبتكرة</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-sm font-bold">5</div>
                   <p className="text-foreground">الحماية تتطلب استراتيجية شاملة ومتعددة المستويات</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-destructive rounded-full flex items-center justify-center text-sm font-bold">4</div>
-                  <p className="text-foreground">التعاون الدولي والتوعية أساسيان للمواجهة</p>
+                  <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-sm font-bold">6</div>
+                  <p className="text-foreground">التعاون الدولي والتوعية أساسيان للمواجهة الفعالة</p>
                 </div>
               </div>
             </div>

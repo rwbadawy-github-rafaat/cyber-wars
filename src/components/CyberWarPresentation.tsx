@@ -2,18 +2,24 @@ import { useState, useEffect } from "react";
 import { PresentationNav } from "./PresentationNav";
 import { TitleSlide } from "./slides/TitleSlide";
 import { IntroSlide } from "./slides/IntroSlide";
+import { HistorySlide } from "./slides/HistorySlide";
 import { TypesSlide } from "./slides/TypesSlide";
-import { ImpactSlide } from "./slides/ImpactSlide";
+import { ActorsSlide } from "./slides/ActorsSlide";
 import { ExamplesSlide } from "./slides/ExamplesSlide";
+import { ImpactSlide } from "./slides/ImpactSlide";
+import { ChallengesSlide } from "./slides/ChallengesSlide";
 import { ProtectionSlide } from "./slides/ProtectionSlide";
 import { ConclusionSlide } from "./slides/ConclusionSlide";
 
 const slides = [
   TitleSlide,
   IntroSlide,
+  HistorySlide,
   TypesSlide,
-  ImpactSlide,
+  ActorsSlide,
   ExamplesSlide,
+  ImpactSlide,
+  ChallengesSlide,
   ProtectionSlide,
   ConclusionSlide,
 ];
@@ -44,10 +50,15 @@ export const CyberWarPresentation = () => {
         nextSlide();
       } else if (event.key === "ArrowLeft") {
         previousSlide();
-      } else if (event.key >= "1" && event.key <= "7") {
+      } else if (event.key >= "1" && event.key <= "9") {
         const slideIndex = parseInt(event.key) - 1;
         if (slideIndex < slides.length) {
           goToSlide(slideIndex);
+        }
+      } else if (event.key === "0") {
+        // الرقم 0 للشريحة العاشرة
+        if (slides.length >= 10) {
+          goToSlide(9);
         }
       }
     };
@@ -76,7 +87,7 @@ export const CyberWarPresentation = () => {
       <div className="fixed top-4 left-4 z-40">
         <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-3 text-xs text-muted-foreground">
           <p>استخدم الأسهم أو المسافة للتنقل</p>
-          <p>اضغط 1-7 للانتقال لشريحة محددة</p>
+          <p>اضغط 1-9 أو 0 للانتقال لشريحة محددة</p>
         </div>
       </div>
     </div>
