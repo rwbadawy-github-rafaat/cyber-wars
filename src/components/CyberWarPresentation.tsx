@@ -70,8 +70,8 @@ export const CyberWarPresentation = () => {
   const CurrentSlideComponent = slides[currentSlide];
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <div className="slide-enter-active">
+    <div className="relative w-full min-h-screen">
+      <div className="slide-enter-active overflow-y-auto h-screen">
         <CurrentSlideComponent />
       </div>
       

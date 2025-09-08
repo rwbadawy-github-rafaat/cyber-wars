@@ -2,8 +2,8 @@ import cyberActors from "@/assets/cyber-actors.jpg";
 
 export const ActorsSlide = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-dark p-8" dir="rtl">
-      <div className="max-w-6xl w-full">
+    <div className="min-h-screen bg-gradient-dark p-8 py-16" dir="rtl">
+      <div className="max-w-6xl w-full mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-foreground mb-4 glow-text">
             الجهات الفاعلة في الحروب السيبرانية

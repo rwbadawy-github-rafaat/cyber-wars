@@ -3,7 +3,7 @@ import cyberHero from "@/assets/cyber-hero.jpg";
 export const TitleSlide = () => {
   return (
     <div 
-      className="min-h-screen flex items-center justify-center relative bg-gradient-dark"
+      className="min-h-screen flex items-center justify-center relative bg-gradient-dark py-8"
       dir="rtl"
       style={{
         backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 0.9)), url(${cyberHero})`,
